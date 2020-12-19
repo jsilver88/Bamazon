@@ -22,7 +22,7 @@ const RegisterScreen = (props) => {
   const submitHandler = (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
-      alert('Password and confirm passwords dont match');
+      alert('Password and confirm password dont match');
     } else {
       dispatch(register(name, email, password));
     }
